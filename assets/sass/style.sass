@@ -1,0 +1,206 @@
+
+/* Commentaire visible en CSS */
+
+// importation d'un fichier SASS    
+@import couleurs  
+
+// import d un partial
+@import _partial
+
+// Mixin 
+@mixin titrecentre
+    text-align: center
+    margin-top: 60px
+
+// Body
+
+body
+    margin: 0
+    padding: 0
+
+// Boucle
+// cree en css 7 classe de +5 pt a chaque fois
+
+/* Boucle CSS */
+@for $bcl from 1 through 7
+    .size-#{$bcl}
+        font-size: 5pt * $bcl
+/* /fin de boucle */
+
+// Body Color
+.violet
+    background-color: $bl
+
+.vert
+    background-color: $sg
+
+.rose
+    background-color: $lightc
+
+.vclair
+    background-color: $lightg
+
+.gris
+    background-color: $gr
+
+.jaune
+    background-color: $whe
+
+// Welcome
+.welcome
+    height: 200px
+    @include titrecentre
+
+// Colonnes GRID
+.grid
+    display: grid
+
+.grid1
+    grid-template-columns: auto auto auto
+
+.grid2
+    grid-template-rows: auto
+
+.grid3
+    grid-template-rows: 40% 15% auto 15%
+
+.grid4
+    grid-template-columns: auto
+
+.grid5
+    grid-template-columns: 50% 50%
+
+.grid6
+    justify-items: center
+
+.grid7
+    grid-template-columns: 30% 1fr 30%
+    grid-template-areas: ". . ." ". foote ." ". . ."
+
+.grid8
+    grid-template-columns: auto auto auto
+
+// Actus
+.actu
+    height: 150px
+    @include titrecentre
+    
+    // Items
+.item1
+    margin: 10px
+    padding: 10px
+
+.titreh4
+    height: 60px
+
+.txt
+    margin: auto
+    text-align: center
+
+.date
+    margin: bottom
+    text-align: right
+
+// Images
+.img
+    display: block
+    background-size: cover
+    background-position: top center
+    background-repeat: no-repeat
+    height: 110px
+
+// contacts
+.contact
+    height: 150px
+    @include titrecentre
+    
+
+.nom
+    margin: 10px
+    text-align: right
+
+.mail
+    margin: 10px
+
+.sujet
+    margin: 10px
+    text-align: center
+
+// Bas de page
+
+.bdp
+    margin: 5px
+
+.marbdp
+    padding-bottom: 10px
+
+// Liens  // & nesting donne une autre valeur a un parent
+a
+    color: $whi
+    text-decoration: none
+    &:hover
+        color: $ro
+
+// Ramification sur footer
+
+$fontcol: $noir
+
+// Footer
+.foote
+    grid-area: foote
+
+footer
+    background-color: $noir
+    text-align: center
+    color: if($fontcol == $noir, $bu, $noir)
+    height: 40px
+// color: $bu
+// Nav barre
+
+.tnav
+    color: $whi
+    margin-left: 10px
+
+.flex
+    display: flex
+
+.flex1
+    justify-content: space-between
+
+nav
+    position: fixed
+    top: 0
+    width: 100%
+
+ul
+    list-style-type: none
+    margin: 0
+    padding: 0
+    width: 100%
+    overflow: hidden
+
+li
+    float: left
+
+li a
+    display: block
+    padding: 10px
+    text-decoration: none
+
+.nvit
+    padding: 4px
+    margin: 4px
+
+
+
+    
+// Responsive
+
+@media screen and ( max-width: 680px )
+    .grid1
+        grid-template-columns: none
+        grid-template-rows: auto
+
+
+    
+

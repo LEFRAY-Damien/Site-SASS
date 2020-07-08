@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sass</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <!-- Nav barre -->
+
+    <nav class="flex flex1 gris">
+        <div class="flex">
+            <div class="tnav"><h3>Titre</h3></div>
+        </div>
+
+        <div class="flex">
+            <ul>
+                <li class="nvit"><a href="#welcome">Welcome</a></li>
+                <li class="nvit"><a href="#actus">Actus</a></li>
+                <li class="nvit"><a href="#contacts">Contacts</a></li>
+                <li class="nvit"><a href="#maps">Maps</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- WELCOME -->
+<section id="welcome"></section>
+    <div class="grid jaune">
+        <div class="welcome">
+            <h1>Welcome en SASS</h1>
+        </div>    
+    </div>
+</section>
+
+    <!-- ACTU -->
+<section id="actus">
+    <div class="grid grid2 vert">
+
+        <div class="actu">
+            <h1>Actus</h1>
+        </div>
+
+        <div class="grid grid1">
+            <div class="item1 grid grid3 violet">
+                <div class="img" style="background-image: url(assets/images/img1.jpg);"></div>
+                <div class="titreh4">
+                    <h4>Titre 1</h4>
+                </div>
+                <div class="txt size-3">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</div>
+                <div class="date">06.07.20</div>
+            </div>
+
+            <div class="item1 grid grid3 violet">
+                <div class="img" style="background-image: url(assets/images/img2.jpg);"></div>
+                <div class="titreh4">
+                    <h4>Titre 2</h4>
+                </div>
+                <div class="txt size-4">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</div>
+                <div class="date">06.07.20</div>
+            </div>
+
+            <div class="item1 grid grid3 violet">
+                <div class="img" style="background-image: url(assets/images/img3.jpg);"></div>
+                <div class="titreh4">
+                    <h4>Titre 3</h4>
+                </div>
+                <div class="txt size-2">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</div>
+                <div class="date">06.07.20</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Contacts -->
+<section id="contacts">
+    <div class="grid grid2 rose">
+
+        <div class="contact">
+            <h1>Contacts</h1>
+        </div>
+
+        <div class="grid grid4">
+
+            <div class="grid grid5">
+                <div class="nom">
+                    <label>Nom</label>
+                    <input type="text" id="Nom">
+                </div>
+                <div class="mail">
+                    <label>Mail</label>
+                    <input type="email" id="Mail">
+                </div>
+            </div>
+
+            <div class="sujet">
+                <label>Sujet</label>
+                <input type="text" id="sujet">
+            </div>
+
+            <div class="sujet">
+                <label>Message</label>
+                <textarea id="message" cols="45" rows="10"></textarea>
+            </div>
+
+            <div class="sujet">
+                <button>Envoyer</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Bas de page -->
+<section id="maps">
+    <div class="grid grid8 vclair marbdp">
+
+        <div class="grid grid2 grid6">
+            <h3>Contact</h3>
+            <div class="grid bdp"><a href="/">Nous</a></div>
+            <div class="grid bdp"><a href="/">Vous</a></div>
+            <div class="grid bdp"><a href="/">Eux</a></div>
+        </div>
+
+        <div class="grid grid2 grid6">
+            <h3>Site map</h3>
+            <div class="grid bdp"><a href="/">Par ici</a></div>
+            <div class="grid bdp"><a href="/">Par la</a></div>
+            <div class="grid bdp"><a href="/">Encore ici</a></div>
+        </div>
+
+        <div class="grid grid2 grid6">
+            <h3>Social</h3>
+            <div class="grid bdp"><a href="/">La classe</a></div>
+            <div class="grid bdp"><a href="/">La salle</a></div>
+            <div class="grid bdp"><a href="/">Le groupe</a></div>
+        </div>
+    </div>
+</section>
+
+    <!-- Footer -->
+    <footer class="grid grid2 grid7">
+        <div class="foote">Site en SASS: <a href="/">Mention legal</a></div>
+    </footer>
+
+</body>
+
+</html>
